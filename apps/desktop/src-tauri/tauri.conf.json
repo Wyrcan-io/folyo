@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Folyo",
+  "version": "0.1.0",
+  "identifier": "io.wyrcan.folyo",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Folyo — Your money, remembered.",
+        "width": 1280,
+        "height": 900,
+        "minWidth": 780,
+        "minHeight": 600,
+        "resizable": true
+      }
+    ],
+    "security": { "csp": null }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/icon.ico", "icons/icon.icns", "icons/icon.png"]
+  }
+}

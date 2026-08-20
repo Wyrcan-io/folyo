@@ -1,0 +1,28 @@
+node_modules/
+dist/
+target/
+.vite/
+.turbo/
+*.local
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Local financial data
+*.sqlite
+*.sqlite3
+*.db
+*.ofx
+*.qfx
+*.qif
+*.csv
+!fixtures/**/*.csv
+
+# Tauri generated files
+**/src-tauri/gen/
+apps/desktop/src-tauri/icons/android/
+apps/desktop/src-tauri/icons/ios/
+apps/desktop/src-tauri/icons/Square*.png
+apps/desktop/src-tauri/icons/StoreLogo.png

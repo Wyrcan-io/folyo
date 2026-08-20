@@ -1,0 +1,4 @@
+Date,Description,Debit,Credit
+not-a-date,Missing date,100,
+2025-06-02,,200,
+2025-06-03,Invalid amount,not-money,

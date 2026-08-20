@@ -1,0 +1,20 @@
+{
+  "name": "@folyo/desktop",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri:dev": "tauri dev",
+    "build:tauri": "tauri build"
+  },
+  "dependencies": {
+    "@folyo/sample-data": "0.1.0",
+    "@folyo/ui": "0.1.0",
+    "@tauri-apps/api": "^2.8.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}

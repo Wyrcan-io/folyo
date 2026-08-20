@@ -1,0 +1,36 @@
+{
+  "name": "folyo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A private financial memory that turns statements into a clear, searchable story of your money.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:site": "npm --workspace @folyo/site run dev",
+    "build:site": "npm --workspace @folyo/site run build",
+    "dev:desktop": "npm --workspace @folyo/desktop run dev",
+    "build:desktop": "npm --workspace @folyo/desktop run build",
+    "tauri:dev": "npm --workspace @folyo/desktop run tauri:dev",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.2",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
